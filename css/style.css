@@ -1,0 +1,442 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+        
+}
+
+
+/* ---------------------seccion header----------------------- */
+
+header {
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+           
+}
+
+
+.item {
+    
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-family: 'Creepster', cursive;
+    height: 30px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 800;
+    border-color: black;
+    text-decoration: none;
+  }
+
+
+ .titulo {
+    position: relative;
+    text-align: center;
+    top: 45px;
+    font-family: 'Creepster', cursive;
+    font-size: 80px;  
+    margin-bottom: 60px;
+    margin-top: 15px;
+    color: black;
+    text-shadow: 10px 10px rgb(94, 11, 94);
+    
+}
+
+
+
+/* ---------------------seccion main----------------------- */
+
+main {
+    
+    background-color: black;
+    font-family: 'Glegoo', serif;
+
+}
+
+
+.titulonoticia {
+    color: aliceblue;
+    font-family: 'Creepster', cursive;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+   
+         
+}
+
+
+.trailer
+{
+    width: 600px;
+    background: linear-gradient(rgb(34, 7, 59),black);
+    font-family: 'Glegoo', serif;
+    text-align: justify;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+}
+
+
+
+.reportaje {
+    
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: linear-gradient(rgb(34, 7, 59),black);
+    font-family: 'Glegoo', serif;
+    text-align: justify;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: aliceblue;
+    padding-bottom: 15px;
+    width: 600px;
+
+}
+
+.galeria{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: linear-gradient(rgb(34, 7, 59),black);
+    font-family: 'Glegoo', serif;
+    text-align: justify;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: aliceblue;
+    padding-bottom: 15px;
+    width: 600px;
+
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.noticias {
+    background-color: black;
+}
+
+
+
+p {
+    font-size: 15px;
+    text-align: justify;
+    color: aliceblue;
+    font-family: 'Glegoo', serif;
+   
+}
+
+.boton {
+    background-color: rgb(34, 7, 59);
+    font-size: 80px;
+     padding-left: 60px;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+.seguir { 
+    color: aliceblue;
+    list-style: none;
+    
+}
+
+.articulos {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.imagen img{
+    width: 100%;
+    transition: transform .2s;
+    
+}
+
+.imagen:hover{
+  transform: scale(1.1);
+    
+}
+
+.trailer-imagen img{
+    
+    width: 100%;
+    
+    
+}
+
+
+.imagen2 img{
+    width: 100%;   
+}
+
+
+
+/* ---------------------seccion footer----------------------- */
+
+
+footer { 
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+.nav-link {
+   
+    text-decoration: none;
+    color: aliceblue;
+    list-style: none;
+    margin-left: 200px;
+    font-size: 15px;
+    border: solid; 
+    border-color: rgb(34, 7, 59);
+    font-family: 'Glegoo', serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+     
+}
+
+
+h4 {font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Creepster', cursive;
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+/* ---------------------grids---------------------- */
+
+
+.contenedorgrids {
+    display: grid;
+    
+    grid-template-rows: 12% 10% 25% 10% 29% 5% 9%;
+    grid-template-areas: 50% 50%
+    "header header" 
+    "titulo titulo"
+    "noticia1 noticia2" 
+    "titulo2 titulo2"
+    "reportaje galeria"
+    "vermas vermas"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    
+}
+
+.ultimasnoticias {
+    grid-area: titulo;
+    background-color: black
+}
+
+.trailer {
+    grid-area: noticia1;
+}
+    
+
+.noticias2 {
+    grid-area: noticia2;
+}
+
+.reportajes {
+    grid-area: titulo2;
+}
+
+.reportaje {
+    grid-area: reportaje;
+}
+
+.galeria {
+    grid-area: galeria;
+}
+.vermas {
+    grid-area: vermas;
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+
+/* --------------------------------QUERIES 480px------------------------------------------- */
+
+
+/* ---------------------header---------------------- */
+@media (max-width: 480px) {header {
+    background-size: cover;
+    text-align: center;
+    max-width: 480px;
+    width: 480px;
+  
+}}
+
+
+@media (max-width: 480px) {.titulo {
+    text-align: center;
+    font-size: 50px;
+     margin-top: 0px;
+       
+}}
+
+@media (max-width: 480px) {.item{
+    
+  
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-family: 'Creepster', cursive;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:rgb(74, 10, 134)
+    
+}}
+
+
+/* ---------------------main---------------------- */
+
+@media (max-width: 480px) {.titulonoticia{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}}
+
+
+@media (max-width: 480px) {.articulos{
+    flex-direction: column;
+   
+}}
+
+
+
+@media (max-width: 480px) {.trailer{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    width: 464px;
+     
+}}
+
+@media (max-width: 480px) {.reportaje{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 0px;
+    width: 464px; 
+    margin-top: 0px;
+
+}}
+
+@media (max-width: 480px) {.galeria{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 0px;
+    width: 464px; 
+    margin-top: 0px;
+
+}}
+
+
+
+
+@media (max-width: 480px) {p{
+    font-size: 10px;
+
+}}
+
+@media (max-width: 480px) {h3{
+    font-size: 15px;
+
+}}
+
+@media (max-width: 480px) {.imagen2 img{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin-left: 0px;
+
+}}
+
+
+@media (max-width: 480px) {.vermas{
+    font-size: 30px;    
+    padding-bottom: 90px;
+    text-align: left;
+    margin-bottom: 0px;
+        
+}}
+
+
+/* ---------------------footer---------------------- */
+
+@media (max-width: 480px) {footer {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    display: inline-block;
+    font-size: 10px;
+    list-style: none;
+     
+}}
+
+@media (max-width: 480px) {h4 {
+    font-size: 20px;
+         
+}}
+
+@media (max-width: 480px) {.nav-link {
+    
+    border-color: rgb(34, 7, 59);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 8px;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}}
+
+/* ---------------------footer---------------------- */
+
+.form-group {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.btn {
+    margin-left: 50px;
+margin-right: 50px;
+
+}
+
+
+
+
+
+
+
+
