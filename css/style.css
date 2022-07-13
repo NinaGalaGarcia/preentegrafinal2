@@ -35,7 +35,7 @@ header {
   margin-bottom: 60px;
   margin-top: 15px;
   color: black;
-  text-shadow: 10px 10px rgb(94, 11, 94);
+  text-shadow: 10px 10px rgb(59, 6, 59);
 }
 
 /* ---------------------seccion main----------------------- */
@@ -45,8 +45,8 @@ main {
 }
 
 .titulonoticia {
-  color: aliceblue;
   font-family: "Creepster", cursive;
+  color: aliceblue;
   font-size: 40px;
   padding: 20px;
   text-align: center;
@@ -55,7 +55,7 @@ main {
 
 .trailer {
   width: 600px;
-  background: linear-gradient(rgb(94, 11, 94), black);
+  background: linear-gradient(rgb(59, 6, 59), black);
   font-family: "Glegoo", serif;
   text-align: justify;
   color: aliceblue;
@@ -69,7 +69,7 @@ main {
   margin-top: 10px;
   margin-left: 40px;
   margin-right: 40px;
-  background: linear-gradient(rgb(94, 11, 94), black);
+  background: linear-gradient(rgb(59, 6, 59), black);
   font-family: "Glegoo", serif;
   text-align: justify;
   border-radius: 10px;
@@ -80,22 +80,7 @@ main {
   width: 600px;
 }
 
-.galeria {
-  margin-top: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
-  background: linear-gradient(rgb(94, 11, 94), black);
-  font-family: "Glegoo", serif;
-  text-align: justify;
-  border-radius: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: aliceblue;
-  padding-bottom: 15px;
-  width: 600px;
-}
-
-.subtitulo {
+.subtitulo, p {
   text-align: center;
   font-size: 20px;
 }
@@ -105,14 +90,14 @@ main {
 }
 
 p {
-  font-size: 15px;
-  text-align: justify;
   color: aliceblue;
   font-family: "Glegoo", serif;
+  font-size: 15px;
+  text-align: justify;
 }
 
 .boton {
-  background-color: rgb(34, 7, 59);
+  background-color: rgb(59, 6, 59);
   font-size: 80px;
   padding-left: 60px;
   text-decoration: none;
@@ -161,7 +146,7 @@ footer {
   margin-left: 200px;
   font-size: 15px;
   border: solid;
-  border-color: rgb(94, 11, 94);
+  border-color: rgb(59, 6, 59);
   font-family: "Glegoo", serif;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -333,7 +318,7 @@ footer {
 }
 @media (max-width: 480px) {
   .nav-link {
-    border-color: rgb(34, 7, 59);
+    border-color: rgb(59, 6, 59);
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;

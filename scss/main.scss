@@ -1,8 +1,21 @@
 
 $color-principal: black;
 $color-secundario: aliceblue;
-$color-terciario: rgb(94, 11, 94);
+$color-terciario:rgb(59, 6, 59);
 
+
+@mixin tarjetas {
+    width: 600px;
+    background: linear-gradient($color-terciario,$color-principal);
+    font-family: 'Glegoo', serif;
+    text-align: justify;
+    color: $color-secundario;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
 
 
 
@@ -12,6 +25,14 @@ $color-terciario: rgb(94, 11, 94);
     box-sizing: border-box;
         
 }
+
+
+
+
+
+
+
+
 
 /* ---------------------seccion header----------------------- */
 
@@ -33,7 +54,7 @@ header {
     margin-bottom: 10px;
     color: $color-principal;
     font-weight: 800;
-    border-color: black;
+    border-color: $color-principal;
     text-decoration: none;
   }
 
@@ -59,8 +80,9 @@ main {
 }
 
 .titulonoticia {
-    color: $color-secundario;
+    
     font-family: 'Creepster', cursive;
+    color: $color-secundario;
     font-size: 40px;
     padding: 20px;
     text-align: center;
@@ -71,15 +93,7 @@ main {
 
 .trailer
 {
-    width: 600px;
-    background: linear-gradient($color-terciario,$color-principal);
-    font-family: 'Glegoo', serif;
-    text-align: justify;
-    color: $color-secundario;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 10px;
-    border-radius: 10px;
+    @include tarjetas;
    
 }
 
@@ -101,21 +115,7 @@ main {
 
 }
 
-.galeria{
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background: linear-gradient($color-terciario,$color-principal);
-    font-family: 'Glegoo', serif;
-    text-align: justify;
-    border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: $color-secundario;
-    padding-bottom: 15px;
-    width: 600px;
 
-}
 
 .subtitulo {
     text-align: center;
@@ -128,15 +128,16 @@ main {
 
 
 p {
-    font-size: 15px;
-    text-align: justify;
+    @extend .subtitulo;
     color: $color-secundario;
     font-family: 'Glegoo', serif;
+    font-size: 15px;
+    text-align: justify;
    
 }
 
 .boton {
-    background-color: rgb(34, 7, 59);
+    background-color: $color-terciario;
     font-size: 80px;
      padding-left: 60px;
     text-decoration: none;
@@ -200,6 +201,7 @@ footer {
     font-family: 'Glegoo', serif;
     border-radius: 10px;
     margin-bottom: 20px;
+
      
 }
 
@@ -390,7 +392,7 @@ footer {
 
 @media (max-width: 480px) {.nav-link {
     
-    border-color: rgb(34, 7, 59);
+    border-color: $color-terciario;
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;
