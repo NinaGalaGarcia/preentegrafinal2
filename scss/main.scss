@@ -1,7 +1,7 @@
 
 $color-principal: black;
 $color-secundario: aliceblue;
-$color-terciario:rgb(59, 6, 59);
+$color-terciario:(rgb(45, 3, 56));
 
 
 @mixin tarjetas {
@@ -25,12 +25,6 @@ $color-terciario:rgb(59, 6, 59);
     box-sizing: border-box;
         
 }
-
-
-
-
-
-
 
 
 
@@ -67,8 +61,12 @@ header {
     margin-bottom: 60px;
     margin-top: 15px;
     color: $color-principal;
-    text-shadow: 10px 10px $color-terciario;
+    text-shadow: 10px 10px rgb(70, 6, 87)
     
+}
+
+a:hover {
+    color: rgb(70, 6, 87) ;
 }
 /* ---------------------seccion main----------------------- */
 
@@ -164,7 +162,7 @@ p {
 }
 
 .imagen:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
     
 }
 
@@ -177,6 +175,10 @@ p {
 
 .imagen2 img{
     width: 100%;   
+}
+
+.btn {
+    font-size: 20px;
 }
 
 
@@ -192,18 +194,26 @@ footer {
 .nav-link {
    
     text-decoration: none;
-    color: $color-secundario;
+    color: aliceblue;
     list-style: none;
-    margin-left: 200px;
+    margin-left: 180px;
     font-size: 15px;
     border: solid; 
     border-color: $color-terciario;
     font-family: 'Glegoo', serif;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
 
      
 }
+
+.nav-item {
+   text-decoration: none;
+    color: aliceblue;
+    list-style: none;
+}
+
 
 h4 {font-size: 2rem;
     color: $color-secundario;
@@ -211,6 +221,28 @@ h4 {font-size: 2rem;
     display: flex;
     justify-content: center;
     }
+
+.siguenos {
+    font-size: 2rem;
+    color: $color-secundario;
+    font-family: 'Creepster', cursive;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* ---------------------seccion contacto---------------------- */
+
+label {
+    color: rgb(147, 25, 158);
+    }
+
+.btn {
+    color: rgb(147, 25, 158);
+}
+
+
 
 
 /* ---------------------grids---------------------- */
@@ -393,8 +425,7 @@ footer {
 @media (max-width: 480px) {.nav-link {
     
     border-color: $color-terciario;
-    margin-left: 20px;
-    margin-right: 20px;
+  
     display: inline-block;
     font-size: 8px;
     list-style: none;
